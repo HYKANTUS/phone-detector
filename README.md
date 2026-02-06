@@ -9,7 +9,7 @@ A phone detector to help you stop procrastinating on your work. When a phone is 
 ```bash
 pip install -r requirements.txt
 ```
-- **3. run: **
+- **3. run:**
 ``` bash
 python app.py
 ```
