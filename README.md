@@ -2,16 +2,20 @@
 
 A phone detector to help you stop procrastinating on your work. When a phone is detected in the view of your webcam, it will remind you to lock in. Built using YOLOv11 and OpenCV.
 
-![Demo screenshot of detector](demo.jpeg)
-![Example screenshot of detector](phone-detected.jpeg)
 
-## Features
+## QUICK SETUP
+- **1. navigate to folder**
+- **2. open cmd, run:**
+```bash
+pip install -r requirements.txt
+```
+- **3. run: **
+``` bash
+python app.py
+```
 
-- Real-time detection of cell phones using YOLOv11
-- Automatic video playback when phone is detected
-- Low-latency webcam processing
 
-## Setup
+## ALT SETUP
 
 1. Create and activate virtual environment:
 ```bash
