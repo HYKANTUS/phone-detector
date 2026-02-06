@@ -4,9 +4,10 @@ A phone detector to help you stop procrastinating on your work. When a phone is 
 
 
 ## PREREQ (uv)
-For Windows:
+For Windows (PS):
 ```bash
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 For Linux:
 ```bash
