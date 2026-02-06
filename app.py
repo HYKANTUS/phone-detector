@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 from ffpyplayer.player import MediaPlayer
 from ultralytics import YOLO
+import platform
 
 # --- CONFIG ---
 MODEL_PATH = "yolo11s.pt" 
@@ -33,7 +34,10 @@ model = YOLO(MODEL_PATH)
 id2name = model.names
 wanted_ids = {i for i, n in id2name.items() if n in TARGET_CLASSES}
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+if platform.system() == "Windows":
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+else:
+    cap = cv2.VideoCapture(0) # Standard for Linux/Mac
 win_name = "YOLOv11 Realtime Detection"
 cv2.namedWindow(win_name, cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO)
 cv2.setWindowProperty(win_name, cv2.WND_PROP_ASPECT_RATIO, cv2.WINDOW_KEEPRATIO)
