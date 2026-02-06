@@ -3,19 +3,17 @@
 A phone detector to help you stop procrastinating on your work. When a phone is detected in the view of your webcam, it will remind you to lock in. Built using YOLOv11 and OpenCV.
 
 
-## QUICK SETUP
-- **1. navigate to folder**
-- **2. open cmd, run:**
+## PREREQ (uv)
+For Windows:
 ```bash
-pip install -r requirements.txt
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
-- **3. run:**
-``` bash
-python app.py
+For Linux:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-
-## ALT SETUP
+## SETUP
 
 1. Create and activate virtual environment:
 ```bash
